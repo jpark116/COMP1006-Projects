@@ -7,7 +7,7 @@
 
     <body>
         <h1>Task Tracker</h1>
-        <form action="tasks.phpd" method="post">
+        <form action="tasks.php" method="post">
             
             <fieldset>
 
