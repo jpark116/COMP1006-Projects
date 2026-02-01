@@ -2,12 +2,15 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname="TimeTracker";
+$dbname="Task";
 
-try {
+try{
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn-setAttrivute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connection failed: " . $e->getMessage();
-    
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
 }
+
+$resu
 ?>
